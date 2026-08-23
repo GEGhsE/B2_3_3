@@ -182,7 +182,7 @@ Error generating stack: `+n.message+`
     b.style.cssText="display:block;width:100%;margin-top:10px;background:#fff;color:#0ea5e9;"
       +"border:2px solid #bae6fd;border-radius:12px;padding:10px 14px;font-size:15px;"
       +"font-weight:700;cursor:pointer;font-family:inherit;box-sizing:border-box;";
-    b.onclick=function(ev){ev.preventDefault();ev.stopPropagation();try{openSettings()}catch(e){}};
+    b.onclick=function(ev){ev.preventDefault();ev.stopPropagation();try{ZI()}catch(e){try{openSettings()}catch(e2){}}};
     return b;
   }
   function sync(){
